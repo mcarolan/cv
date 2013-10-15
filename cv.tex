@@ -23,8 +23,10 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+\usepackage[hmargin=1.25cm, vmargin=0.5cm]{geometry} % Document margins
 
 \usepackage{marvosym} % Required for symbols in the colored box
 \usepackage{ifsym} % Required for symbols in the colored box
@@ -35,7 +37,7 @@
 \usepackage{fontspec,xltxtra,xunicode}
 \defaultfontfeatures{Mapping=tex-text}
 \setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Noto Serif} % Font for your name at the top
 %\setmonofont[Scale=MatchLowercase]{Andale Mono}
 
 % Colors for links, text and headings
@@ -53,7 +55,6 @@
 \fancyhf{}
 % Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
 % Example footer:
-%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
 
 \renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
 
@@ -74,12 +75,22 @@
 %----------------------------------------------------------------------------------------
 
 \par{\centering{\sffamily\Huge Martin John Carolan}\\ % Your name
-{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
+%{\color{headings}\fontspec[Variant = 2]{Zapfino} Curriculum {Vit\fontspec[Variant = 3]{Zapfino}\ae}\\[15pt]\par} % Curriculum vitae text in the Zapfino font
 	
 %----------------------------------------------------------------------------------------
 
 \begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
 \vspace{0pt} % Trick for alignment
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 104b, St John's Hill, London, SW11 1SH \\ % Address
+\raisebox{-3pt}{\Mobilefone} & 077131 64552 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:hello@mcarolan.net}{hello@mcarolan.net} \\ % Email address
+\Keyboard & \href{http://www.mcarolan.net}{http://www.mcarolan.net} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
 	
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE
@@ -91,12 +102,17 @@
 % WORK EXPERIENCE 1
 %------------------------------------------------
 
-{\raggedleft\textsc{Current, from Jan 2009}\par}
+{\raggedleft\textsc{Current, from December 2012}\par}
 
-{\raggedright\large Trader at Enoi s.p.a., Milan\\
-\textit{Physical Natural Gas Trading}\\[5pt]}
+{\raggedright\large Data Engineer\\
+\textit{Mind Candy}\\[5pt]}
 
-\normalsize{Provided analysis of spreads, in particular time and location spreads, with emphasis on trading opportunities on the curve, also taking into account the availability of storage facilities. Became familiar with logistic implications of physical gas trading and developed knowledge of continental virtual hubs for gas exchange.}\\
+\normalsize{
+\begin{itemize}
+\item We provide shared services capture data and provide tight integration across all our games. We make an eventing system, which captures and analyses over 20 million events every day, and an A/B Testing system, which helps us to optimise the features of our games. We also make an identity system, allowing users to have a common identity across multiple products, platforms, and authentication methods, and a notification system which allows the business to send notifications in bulk to specific cohorts across all of our systems. Almost all of our systems are made with Scala, and we are heavy users of Amazon AWS.
+\item I joined Mind Candy as an engineer on the Payments team, who are responsible for integrating Moshi Monsters with external Payment, Subscriptions, and Game Time Card providers. There are 100's of thousands of actively paying subscribers, which our systems manage.
+\item When I joined the Payments team, the system consisted of one collosal project which was proving to be a bottleneck. As new work came in we managed to slice the backend system in to a few smaller, more cohesive, Scala projects and migrated our frontend on to a new company wide web platform which uses Node.js.
+\end{itemize}}
 
 %------------------------------------------------
 % WORK EXPERIENCE 2
@@ -111,13 +127,24 @@
 \begin{itemize}
 	\item My role primairily focused on development of a real-time bidding/analytics system, in which I conducted both middle-tier (Java/C++) development, and User Interface (C\#/WPF, HTML5/Ext JS4) development.
 	\item I joined through the intensive Morgan Stanley Technology Analyst Programme - receiving comprehensive 15 week training on Unix, C++, Java, C\#, RDBMS systems, web development, Perl and Python along with presentation skills, project management and other professional development training.
-	\item I worked in a large globally distributed team, and successfully helped develop many project components as part of my role, even leading the development of 2 new subsystems.
 	\item I also undertake support development on systems/models written in a variety of languages (C++, Perl, Java, C\#), to ensure our trading desk have all the tools needed to operate successfully.
 \end{itemize}}
 
 %------------------------------------------------
 % WORK EXPERIENCE 4
 %------------------------------------------------
+
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+
 
 {\raggedleft\textsc{2008}\par}
 
@@ -130,25 +157,6 @@
 	\item I also worked on a House Price Information indexer written in Java, and provided the infrastructure surrounding a new County Court Judgement feed for use in analytical models. All 3 projects are still in production and have active users.
 \end{itemize}
 }
-
-\end{minipage} % End the left-hand side of the page
-\hfill
-\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
-\vspace{0pt} % Trick for alignment
-
-%----------------------------------------------------------------------------------------
-%	COLORED BOX
-%----------------------------------------------------------------------------------------
-
-\colorbox{shade}{\textcolor{text1}{
-\begin{tabular}{c|p{7cm}}
-\raisebox{-4pt}{\textifsymbol{18}} & 104b, St John's Hill, London, SW11 1SH \\ % Address
-\raisebox{-3pt}{\Mobilefone} & +44 (0)77131 64552 \\ % Phone number
-\raisebox{-1pt}{\Letter} & \href{mailto:hello@mcarolan.net}{hello@mcarolan.net} \\ % Email address
-\Keyboard & \href{http://www.mcarolan.net}{http://www.mcarolan.net} \\ % Website
-\end{tabular}
-}
-}\\[10pt]
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -211,38 +219,40 @@
 
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
+%	SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills} 
+\section{Skills} 
 
-\begin{tabular}{rl}
-Basic Knowledge
-& \textsc{java}, Adobe Illustrator\\ 
-& \\
-Intermediate Knowledge
-& \textsc{python}, \textsc{html}, \LaTeX,\\
-& OpenOffice, Linux,\\
-& Microsoft Windows \\
-& Computer Hardware \& \\
-& Support\\ \\
-\end{tabular}
+\setlength{\unitlength}{0.1cm}
+\begin{picture}(20,5)
+\put(0,0){\includegraphics{5-star-rating}}
+\put(25,1.5){Scala, Java, Akka, Play}
+\end{picture}
+
+\setlength{\unitlength}{0.1cm}
+\begin{picture}(20,5)
+\put(0,0){\includegraphics{4-star-rating}}
+\put(25,1.5){C\#, Python, JavaScript}
+\end{picture}
+
+\setlength{\unitlength}{0.1cm}
+\begin{picture}(20,5)
+\put(0,0){\includegraphics{3-star-rating}}
+\put(25,1.5){C++, HTML/CSS}
+\end{picture}
 
 %----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS
+%	OUTSIDE OF THE OFFICE
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills} 
+\section{Outside of the office I} 
+\begin{itemize}
+	\item Am an avid runner, having completed 3 full marathons and 8 half marathons.
+	\item Teach programming at a local primary school on a voluntary basis (using Scratch and Python).
+	\item Always have a personal programming or electronics project on the go, ask me about the latest!
+\end{itemize}
 
-\begin{tabular}{rl}
-\textsc{Conferences}
-& Oral Presentation at the California \\
-& Computer Science Conference -- 2010\\
-& \\
-\textsc{Posters}
-& Poster at the Annual Programming \\
-& Conference in Oregon -- 2009 \\
-\end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
 	
