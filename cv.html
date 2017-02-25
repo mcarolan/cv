@@ -1,0 +1,331 @@
+<html>
+	<head>
+		<title>Martin Carolan - Curriculum Vitae</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Noto+Serif" rel="stylesheet">
+		<style type="text/css">
+			a {
+				color: blue;
+			}
+			a:visited {
+				color: blue;
+			}
+			.columnContents {
+				margin: 10px;
+			}
+
+			h1 {
+				font-family: 'Noto Serif', serif;
+			}
+
+			h2 {
+				color: #701112;
+				font-family: 'Noto Serif', serif;
+				margin-bottom: 0;
+			}
+
+			h2:after {
+			    content:' ';
+			    display:block;
+			    border:1px solid #EEEEEE;
+			}
+
+			h3 {
+				font-family: 'Noto Serif', serif;
+				font-variant: small-caps;
+				text-align: right;
+			}
+
+			.company {
+				font-style: italic;
+				font-size: 15pt;
+			}
+
+			.location {
+				font-size: 15pt;
+			}
+
+			.role {
+				font-size: 17pt;
+				display: block;
+			}
+
+			#contact {
+				border: solid 2px 	#F5DD9D;
+				padding: 5px;
+				border-radius: 10px;
+			}
+
+			.job {
+				border: solid 2px #DDDDDD;
+				padding: 5px;
+				border-radius: 10px;
+				margin: 5px;
+			}
+
+			.jobOld {
+				border: solid 2px #EEEEEE;
+				padding: 5px;
+				border-radius: 10px;
+				margin: 5px;
+			}
+
+			#contact ul {
+				padding: 0px;
+			}
+
+			#header h1 {
+				text-align: center;
+			}
+
+			#wrapper {
+				width: 100%;
+			}
+			#column1 {
+				float: left;
+				width: 50%;
+			}
+			#column2 {
+				float: right;
+				width: 50%;
+			}
+			body {
+				margin: 0;
+				padding: 0;
+				font-size: 10pt;
+				font-family: 'Source Sans Pro', sans-serif;
+			}
+			#contact ul {
+				list-style: none;
+			}
+			.icon {
+				width: 30px;
+				float: left;
+			}
+			#phoneIcon {
+				content: '\9742';
+				width: 20px;
+			}
+			#emailIcon {
+				content: '\9993';
+			}
+			#websiteIcon {
+				content: '\9000';
+			}
+
+			.logoAndDate {
+				width: 100%;
+			}
+
+			.logoAndDate img {
+				vertical-align: top;
+			}
+
+			.logoAndDate h3 {
+				vertical-align: top;
+			}
+
+			.education td {
+				padding: 5px
+			}
+
+			.year {
+				font-style: italic;
+			}
+
+			.course {
+				font-weight: bold;
+				display: block;
+			}
+
+			.result {
+				font-variant: small-caps;
+				display: block;
+			}
+
+			.institution {
+				font-style: italic;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>Martin Carolan</h1>
+			</div>
+			<div id="column1">
+				<div class="columnContents">
+					<div id="contact">
+						<ul>
+							<li><span class="icon">&#8962;</span>Flat 3, 180 Springfield Road, Brighton, BN1 6DG</li>
+							<li><span class="icon">&#9742;</span>07713164552</li>
+							<li><span class="icon">&#9993;</span><a href="mailto:martin@carolan.email">martin@carolan.email</a></li>
+							<li><span class="icon">&#9000;</span><a href="https://mcarolan.net">mcarolan.net</a></li>
+						</ul>
+					</div>
+					<h2>Commercial Experience</h2>
+					<div class="job">
+					<table class="logoAndDate">
+						<tr>
+							<td><img src="itv.png" /></td>
+							<td><h3>June 2014 - Present</h3></td>
+						</tr>
+					</table>
+					<span class="role">Senior Software Engineer</span>
+					<span class="company">ITV</span><span class="location">, London</span>
+					<ul>
+						<li>Lead developer on the Content Delivery team, who are responsible for building a commericially enticing pipeline to get ITV's media/metadata to the right place, at the right time, in the correct format.</li>
+						<li>The system is powered by a collection of Scala micro-services, which primarily communicate by asynchronous messaging (with RabbitMQ).</li>
+						<li>Experience with running production services on a hybrid platform, primarily based in Amazon AWS, with integration between on-premise systems for media archival and processing.</li>
+						<li>I promote use of functional programming principles wherever possible, and am an advocate of the TypeLevel stack.</li>
+						<li>Line management of 3 developers and a QA Engineer. Experience in recruitment leadership of cross-functional teams.</li>
+						<li>Helped the team to open-source bucky, an AMQP library written in Scala.</li>
+					</ul>
+				</div>
+				<div class="job">
+					<table class="logoAndDate">
+						<tr>
+							<td><img src="mindcandy.png" /></td>
+							<td><h3>December 2012 - June 2014</h3></td>
+						</tr>
+					</table>
+					<span class="role">Data Engineer</span>
+					<span class="company">Mind Candy</span><span class="location">, London</span>
+					<ul>
+						<li>Built shared services to capture data, enabling
+insight and integration across all Mind Candy games. Helped to build:
+<ul>
+<li>an eventing system to capture and interpret millions of
+events every day</li>
+<li>an A/B Testing system, which helped
+ optimise the features of Mind Candy games</li>
+<li>an identity system, allowing users to have a common experience
+across multiple products, platforms and authentication methods</li>
+<li>a notification system which allowed the business to
+send notifications in bulk to users with specific characteristics</li>
+</ul>
+All of our systems were built with Scala,
+and we were heavy users of Amazon AWS.</li>
+						<li>I joined Mind Candy as a Software Engineer on the Payments team,
+who were responsible for integrating Moshi Monsters with
+external Payment, Subscriptions, and Game Time Card providers.</li>
+						<li>When I joined the Payments team, the architecture consisted of
+a monolith which was proving to be a bottleneck.
+As new work came in we managed to slice the backend system into a few smaller,
+more cohesive, Scala micro-services and
+migrated our frontend on to a new company wide web platform which used Node.js.</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<div id="column2">
+				<div class="columnContents">
+					<div class="jobOld">
+					<table class="logoAndDate">
+						<tr>
+							<td><img src="ms.png" /></td>
+							<td><h3>July 2010 - December 2012</h3></td>
+						</tr>
+					</table>
+					<span class="role">Associate Software Engineer</span>
+					<span class="company">Morgan Stanley</span><span class="location">, London</span>
+					<ul>
+						<li>My role primarily focused on the development of a real-
+time bidding/analytics system, in which I conducted both
+back-end (Java/C++) development, and front-end (C#/WPF,
+HTML5/Ext JS4) development.</li>
+						<li>I joined through the intensive Morgan Stanley Technology Analyst Programme. We received comprehensive 15
+week training on Unix, C++, Java, C#, relational database
+systems, web development, Perl and Python along with
+presentation skills, project management and other professional development training.</li>
+						<li>I also undertook support development on systems/models
+written in a variety of languages (C++, Perl, Java, C#), to
+ensure our trading desks had all the tools needed to operate
+successfully.</li>
+					</ul>
+				</div>
+				<div class="jobOld">
+					<table class="logoAndDate">
+						<tr>
+							<td><img src="ms.png" /></td>
+							<td><h3>Summer 2008</h3></td>
+						</tr>
+					</table>
+					<span class="role">Analyst Software Engineer</span>
+					<span class="company">Morgan Stanley</span><span class="location">, London</span>
+					<ul>
+						<li>On this internship I worked within the Securitised Products Group at Morgan Stanley, rewriting
+a legacy client-facing investor report web portal in
+ASP.NET/C#</li>
+						<li>I also worked on a House Price Information indexer
+written in Java, and provided the infrastructure surrounding a new County Court Judgement feed for
+use in analytical models.</li>
+					</ul>
+				</div>
+					<h2>Education</h2>
+					<table class="education">
+						<tr>
+							<td class="year">2010</td>
+							<td><span class="course">BSc Computer Science</span>
+									<span class="result">First Class with Honours</span>
+									<span class="institution">University of Durham</span></td>
+						</tr>
+						<tr>
+							<td class="year">2007</td>
+							<td>
+								<span class="course">A Level</span>
+								<span class="result">History: A, Biology: B, ICT: B</span>
+								<span class="institution">Fallibroome High School</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="year">2005</td>
+							<td>
+								<span class="course">GCSE</span>
+								<span class="result">7 A's (incl. English,Maths,Double Science) 3 B's.</span>
+								<span class="institution">Fallibroome High School</span></td>
+						</tr>
+					</table>
+
+					<h2>Conference Talks</h2>
+					<table class="education">
+						<tr>
+							<td class="year">2016</td>
+							<td>
+								<span class="course">flatMappy bird: functional flappy bird</span>
+								<span class="result">An overview of functional reactive programming, in particular Coroutines.</span>
+								<span class="institution">Scala eXchange</span>
+							</td>
+						</tr>
+					</table>
+
+					<h2>Awards</h2>
+					<table class="education">
+						<tr>
+							<td class="year">2009</td>
+							<td>
+								<span class="course">Scott Logic Award first prize</span>
+								<span class="institution">University of Durham</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="year">2008</td>
+							<td>
+								<span class="course">Morgan Stanley prize</span>
+								<span class="institution">University of Durham</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="year">2007</td>
+							<td>
+								<span class="course">BCS prize for academic achievement</span>
+								<span class="institution">University of Durham</span>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
