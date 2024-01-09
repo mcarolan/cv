@@ -1,369 +1,491 @@
 <html>
-	<head>
-		<title>Martin Carolan - Curriculum Vitae</title>
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Noto+Serif" rel="stylesheet">
-		<style type="text/css">
-			a {
-				color: blue;
-			}
-			a:visited {
-				color: blue;
-			}
-			.columnContents {
-				margin: 10px;
-			}
 
-			h1 {
-				font-family: 'Noto Serif', serif;
-                font-size: 15pt;
-			}
+<head>
+	<title>Martin Carolan - Curriculum Vitae</title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Noto+Serif" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
 
-			h2 {
-				color: #701112;
-				font-family: 'Noto Serif', serif;
-				margin-bottom: 0;
-			}
+		a {
+			color: blue;
+		}
 
-			h2:after {
-			    content:' ';
-			    display:block;
-			    border:1px solid #EEEEEE;
-			}
+		a:visited {
+			color: blue;
+		}
 
-			h3 {
-				font-family: 'Noto Serif', serif;
-				font-variant: small-caps;
-				text-align: right;
-        font-size: 13pt;
-			}
+		h1 {
+			font-size: 17pt;
+			margin: 0px;
+		}
 
-			.company {
-				font-style: italic;
-				font-size: 13pt;
-			}
+		h2 {
+			color: #333333;
+			font-family: 'Noto Serif', serif;
+			margin-bottom: 0;
+			padding-left: 4px;
+		}
 
-			.location {
-				font-size: 13pt;
-			}
+		h2:after {
+			content: ' ';
+			display: block;
+			border: 1px solid #666666;
+		}
 
-			.role {
-				font-size: 13pt;;
-			}
+		h3 {
+			font-family: 'Noto Serif', serif;
+			font-variant: small-caps;
+			text-align: right;
+			font-size: 12pt;
+		}
 
-			#contact {
-				border: solid 2px 	#F5DD9D;
-				padding: 5px;
-				border-radius: 10px;
-			}
+		.company {
+			font-style: italic;
+			font-size: 12pt;
+		}
 
-			.job {
-				border: solid 2px #CCCCCC;
-				padding: 5px;
-				border-radius: 10px;
-				margin: 5px;
-			}
-			
-			
-			#valuesDiv {
-				border: solid 2px #ECECEC;
-				padding: 5px;
-				border-radius: 10px;
-				margin-left: 15px;
-				margin-right: 15px;
-				margin-top: 15px;
-				clear: both;
-			}
+		.location {
+			font-size: 12pt;
+		}
 
-			.jobOld {
-				border: solid 2px #ECECEC;
-				padding: 5px;
-				border-radius: 10px;
-				margin: 5px;
-			}
+		.role {
+			font-size: 12pt;
+			;
+		}
 
-			#contact ul {
-				padding: 0px;
-			}
+		#contact {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+		}
 
-			#header h1 {
-				text-align: center;
-			}
+		.contact-info {
+			display: flex;
+			align-items: center;
+			text-align: left;
+			/* Align text to the left within the container */
+			margin-right: 10px;
+			/* Adjust as needed for spacing between icon and text */
+		}
 
-			#wrapper {
-				width: 100%;
-			}
-			#column1 {
-				float: left;
-				width: 50%;
-			}
-			#column2 {
-				float: right;
-				width: 50%;
-			}
-			body {
-				margin: 0;
-				padding: 0;
-				font-size: 10pt;
-				font-family: 'Source Sans Pro', sans-serif;
-			}
-			#contact ul {
-				list-style: none;
-			}
-			.icon {
-				width: 30px;
-				float: left;
-			}
-			#phoneIcon {
-				content: '\9742';
-				width: 20px;
-			}
-			#emailIcon {
-				content: '\9993';
-			}
-			#websiteIcon {
-				content: '\9000';
-			}
+		.contract-role {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			text-align: right;
+		}
 
-			.logoAndDate {
-				width: 100%;
-			}
 
-			.logoAndDate img {
-				vertical-align: top;
-			}
+		.contract-role-container {
+			display: inline-block;
+			width: 129px;
+			height: 30px;
+			text-align: center;
+		}
 
-			.logoAndDate h3 {
-				vertical-align: top;
-			}
 
-			.education td {
-				padding: 3px
-			}
+		.contract-role-image {
+			display: inline-block;
+			vertical-align: middle;
+		}
 
-			.year {
-				font-size: 10pt;
-				font-style: italic;
-			}
+		/* .contract-role span {
+				margin-left: 5px;
+			} */
 
-			.course {
-				font-size: 10pt;
-				font-weight: bold;
-				display: block;
-			}
+		.icon {
+			width: 32px;
+			height: 32px;
+		}
 
-			.result {
-				font-size: 10pt;
-				font-variant: small-caps;
-				display: block;
-			}
+		#valuesDiv {
+			border: solid 2px #ECECEC;
+			padding: 5px;
+			border-radius: 10px;
+			margin-left: 4px;
+			margin-right: 4px;
+			margin-top: 15px;
+			clear: both;
+		}
 
-			.institution {
-				font-size: 10pt;
-				font-style: italic;
-			}
-			
-			.keywords {
-                font-size: 7pt;
-                font-style: italic;
-			}
+		.job {
+			border: solid 1px #CCCCCC;
+			padding: 3px;
+			border-radius: 5px;
+			margin: 3px;
+		}
 
-		</style>
+		#header h1 {
+			text-align: center;
+			font-family: 'Delius', cursive;
+		}
 
-	</head>
-	<body>
-		<div id="wrapper">
-			<div id="header">
-				<h1>Martin Carolan</h1>
+		#wrapper {
+			margin-top: 0;
+			width: 100%;
+		}
+
+		#column1 {
+			float: left;
+			width: 50%;
+		}
+
+		#column2 {
+			float: right;
+			width: 50%;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+			font-size: 10pt;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+
+		#contact ul {
+			list-style: none;
+		}
+
+		.icon {
+			width: 30px;
+			float: left;
+		}
+
+		#phoneIcon {
+			content: '\9742';
+			width: 20px;
+		}
+
+		#emailIcon {
+			content: '\9993';
+		}
+
+		#websiteIcon {
+			content: '\9000';
+		}
+
+		.logoAndDate {
+			width: 100%;
+		}
+
+		.logoAndDate img {
+			vertical-align: top;
+		}
+
+		.logoAndDate h3 {
+			vertical-align: top;
+		}
+
+		.education td {
+			padding: 3px
+		}
+
+		.education {
+			padding-left: 4px;
+		}
+
+		.year {
+			font-size: 10pt;
+			font-style: italic;
+		}
+
+		.course {
+			font-size: 10pt;
+			font-weight: bold;
+			display: block;
+		}
+
+		.result {
+			font-size: 10pt;
+			font-variant: small-caps;
+			display: block;
+		}
+
+		.institution {
+			font-size: 10pt;
+			font-style: italic;
+		}
+
+		.keywords {
+			font-size: 7pt;
+			font-style: italic;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<h1>Martin Carolan</h1>
+		</div>
+		<div id="contact">
+			<div class="contact-info">
+				<img src="phone-icon.svg" alt="Phone" class="icon">
+				<span>07713164552</span>
 			</div>
-			<div id="column1">
-				<div class="columnContents">
-					<div id="contact">
-						<ul>
-							<li><span class="icon">&#8962;</span>12 Maple Avenue, Poynton, Stockport, SK12 1PR</li>
-							<li><span class="icon">&#9742;</span>07713164552</li>
-							<li><span class="icon">&#9993;</span><a href="mailto:martin@carolan.email">martin@carolan.email</a></li>
-							<li><span class="icon">&#9000;</span><a href="https://mcarolan.net">mcarolan.net</a></li>
-						</ul>
-					</div>
-					<h2>Commercial Experience</h2>
-					<div class="job">
+			<div class="contact-info">
+				<img src="email-icon.svg" alt="Email" class="icon">
+				<span><a href="mailto:martin@typesystems.co.uk">martin@typesystems.co.uk</a></span>
+			</div>
+		</div>
+		<div id="column1">
+			<div class="columnContents">
+				<div class="job">
 					<table class="logoAndDate">
 						<tr>
 							<td><img src="typesystems.png" height="30" width="90" /></td>
-							<td><h3>Jul 2017 - Present</h3></td>
+							<td>
+								<h3>Jul 2017 - Present</h3>
+							</td>
 						</tr>
 					</table>
 					<span class="role">Director & Consultant -</span>
-					<span class="company">Type Systems</span><span class="location">, Manchester</span><br/>
-                        Scala development, team leadership and Scala training contracts:<br/>
-                        
-                        <img src="itv.png" height="30" width="45" /> <span class="role">Jan 2019 - Present  </span>
-                        <ul>
-                        <li>Helped to build new product that tracks ITV's content from early stage sign-off through to its delivery, processing, and archival.</li>
-                        <li>A collection of Scala microservices aggregate data from other ITV systems, and present exceptional behaviour to operations users in a web UI written in TypeScript using React.</li>
-                        <li>Worked closely with the operations team to ensure the product delivered incremental improvements in their efficiency.</li>
-                        </ul>
-                        
-                        <img src="hmrc.png" height="30" width="50" /> <span class="role">Oct 2018 - Dec 2018</span>
-                         <ul>
-                        <li>Development on Scala microservices that support HMRC for business.</li>
-                        </ul>
-                        
-                        <img src="underscore.png" height="30" width="68" /> <span class="role">Nov 2017 - Dec 2018</span>
-                        <ul>
-                        <li>Provided mentorship and training to a team of developers at YOOX Net-a-Porter, who were taking on a new Scala project. Worked through Underscore's "Scala with Cats" book with the team, provided code reviews and workshops regarding their Scala project.</li>
-                        <li>Built a flexible reference/credit checking system for Goodlord, a lettings platform. We finished this project 3 weeks ahead of schedule, delivering incremental improvements that resulted in a 40% increase in productivity of the referencing team by the end of the project.</li>
-                        <li>Prototyped an integration between Apache Spark and Hyperledger Fabric for advertising agency Blis, recording the source of advertising data in a blockchain.</li>
-                        </ul>
-                        
-                        <img src="hmrc.png" height="30" width="50" /> <span class="role">Jul 2017 - Nov 2017</span>
-                        <ul>
-                        <li>Team Leadership on a new infrastructure project.</li>
-                        <li>Development on Scala microservices that allow users to upload files to HMRC.</li>
-                        </ul>
-                        
-                        Keywords: <span class="keywords">Functional Programming, Scala, Cats, Http4s, Postgresql, RabbitMQ, AWS, BigQuery, Spark, Leadership, Training, Terraform, Puppet, TypeScript, Jenkins</span>
+					<span class="company">Type Systems</span><span class="location">, Manchester</span><br />
+					Scala development, team leadership and Scala training contracts:<br />
+
+					<div class="contract-role">
+						<span class="contract-role-container"><img src="globe.svg" height="30" width="30" class="contract-role-image" /></span> <span class="role">Dec 2022 - Dec
+							2023</span>
 					</div>
-					<div class="jobOld">
+					<ul>
+						<li>I took a career break after 12 years working in industry. I travelled across 20 countries in 3
+							continents with my fianc&eacute;.</li>
+						<li>Extended travel provided countless opportunities for growth of communication, planning and problem solving skills. And we had an epic adventure <img src="happy.svg" width="16" height="16" />.</li>
+					</ul>
+
+					<div class="contract-role">
+						<span class="contract-role-container"><img src="ee.png" height="30" width="90" class="contract-role-image" /></span> <span class="role">Jul 2022 - Dec 2022</span>
+					</div>
+					<ul>
+						<li>Helped to bootstrap a greenfield authentication/identity system for SiriusXM.</li>
+						<li>The project was implemented in Scala. It made heavy use of functional programming techniques
+							and libraries such as Cats, Http4s, Doobie and Smithy4s.</li>
+						<li>Also helped found the project's continuous integration, continuous deployment, devops
+							and IaC practices. The system was deployed on AWS and used CDK (with TypeScript bindings)
+							for IaC.</li>
+					</ul>
+
+					<div class="contract-role">
+						<span class="contract-role-container"><img src="itv.svg" height="30" class="contract-role-image" /></span><span class="role">Jan 2019 - Apr
+							2022</span>
+					</div>
+					<ul>
+						<li>Contributed to the development of a novel product designed to monitor ITV's content lifecycle, overseeing processes from initial approval through to delivery, processing, and archival.</li>
+						<li>A collection of Scala microservices aggregated data from internal/external systems, and presented
+							exceptional behaviour to operations users in a web UI written in TypeScript using React.
+						</li>
+						<li>Worked closely with the operations team to ensure the product delivered incremental
+							improvements in their efficiency.</li>
+					</ul>
+
+
+					<div class="contract-role">
+						<span class="contract-role-container"><img src="underscore-logo-text-right.svg" width="129" height="30"
+								class="contract-role-image" /></span> <span class="role">Nov 2017 - Dec 2018</span>
+					</div>
+					<ul>
+						<li>Provided mentorship and training to a team of developers at YOOX Net-a-Porter, who were new to Scala. Worked through Underscore's "Scala with Cats" book with the
+							team, provided code reviews and workshops regarding their new Scala project.</li>
+						<li>Built a flexible reference/credit checking system for Goodlord, a lettings platform. We
+							finished this project 3 weeks ahead of schedule, delivering incremental improvements that
+							resulted in a 40% increase in productivity of the referencing team by the end of the
+							project.</li>
+						<li>Prototyped an integration between Apache Spark and Hyperledger Fabric for advertising agency
+							Blis, recording the source of advertising data in a blockchain.</li>
+					</ul>
+
+					<div class="contract-role">
+						<span class="contract-role-container"><img src="HMRC.svg" height="30" class="contract-role-image" /></span> <span class="role">Jul 2017 - Nov 2017</span>
+					</div>
+					<ul>
+						<li>Team Leadership on a new infrastructure project.</li>
+						<li>The project was deployed on AWS, and used Terraform for IaC. We prototyped integrations with HSM products. These would produce robust and verifible digital signatures.</li>
+						<li>Development on Scala microservices that allow users to upload files to HMRC.</li>
+					</ul>
+
+					Keywords: <span class="keywords">Functional Programming, Scala, Cats, Http4s, Postgresql, RabbitMQ,
+						AWS, BigQuery, Spark, Leadership, Training, Terraform, Puppet, TypeScript, Jenkins</span>
+				</div>
+				<div class="job">
 					<table class="logoAndDate">
 						<tr>
-							<td><img src="itv.png" height="30" width="45" /></td>
-							<td><h3>Jun 2014 - Jul 2017</h3></td>
+							<td><img src="itv.svg" height="30" /></td>
+							<td>
+								<h3>Jun 2014 - Jul 2017</h3>
+							</td>
 						</tr>
 					</table>
 					<span class="role">Senior Software Engineer -</span>
 					<span class="company">ITV</span><span class="location">, London</span>
 					<ul>
-						<li>Team Lead on the Content Delivery team, who are responsible for building a commercially enticing pipeline to get ITV's media/metadata to the right place, at the right time, in the correct format.</li>
-						<li>Built a collection of event driven Scala micro-services, communicating with asynchronous messaging (using RabbitMQ), synchronous messaging (using HTTP and REST) and storing state in Postgresql.</li>
-						<li>Experience with building and supporting production services on a hybrid platform, based in Amazon AWS and on-site data centres.</li>
+						<li>Team Lead on the Content Delivery team, who are responsible for building a commercially
+							enticing pipeline to get ITV's media/metadata to the right place, at the right time, in the
+							correct format.</li>
+						<li>Built a collection of event driven Scala micro-services, communicating with asynchronous
+							messaging (using RabbitMQ), synchronous messaging (using HTTP and REST) and storing state in
+							Postgresql.</li>
+						<li>Experience with building and supporting production services on a hybrid platform, based in
+							Amazon AWS and on-site data centres.</li>
 						<li>Built reliable integrations between COTS systems for media archival and processing.</li>
-						<li>Promoted the use of functional programming principles, pair programming and advocated the TypeLevel stack.</li>
-						<li>Hired and line managed 3 smart and kind developers, helping them to grow within the organisation and build great software.</li>
-						<li>Helped the team to build and open-source <a href="https://github.com/ITV/bucky">Bucky</a>, an AMQP library written in Scala.</li>
+						<li>Promoted the use of functional programming principles, pair programming and advocated the
+							TypeLevel stack.</li>
+						<li>Hired and line managed 3 smart and kind developers, helping them to grow within the
+							organisation and build great software.</li>
 					</ul>
-                    Keywords: <span class="keywords">Functional Programming, Scala, Cats, Http4s, Postgresql, RabbitMQ, AWS, Leadership, Management, Recruitment, Jenkins</span>
-				</div>
+					Keywords: <span class="keywords">Functional Programming, Scala, Cats, Http4s, Postgresql, RabbitMQ,
+						AWS, Leadership, Management, Recruitment, Jenkins</span>
 				</div>
 			</div>
-			<div id="column2">
-				<div class="columnContents">
-					<div class="jobOld">
-						<table class="logoAndDate">
-							<tr>
-								<td><img src="mindcandy.png" width="30" height="30" /></td>
-								<td><h3>Dec 2012 - Jun 2014</h3></td>
-							</tr>
-						</table>
-						<span class="role">Data Engineer -</span>
-						<span class="company">Mind Candy</span><span class="location">, London</span>
-						<ul>
-							<li>Worked on Scala services to capture data, enabling
-	insight and integration across all Mind Candy games, including:
-	<ul>
-	<li>an eventing system to capture and interpret millions of
-	events every day</li>
-	<li>an A/B Testing system, which helped
-	 optimise the features of Mind Candy games</li>
-	<li>an identity system, allowing users to have a common experience
-	across multiple products, platforms and authentication methods</li>
-	<li>a notification system which allowed the business to
-	send notifications in bulk to users with specific characteristics</li>
-	</ul>
-	</li>
-	<li>
-	Worked on Payment and Subscription systems with:
-	<ul>
-        <li>Several reliable integrations with payment gateways, subscription and voucher providers.</li>
-        <li>Large emphasis on flexibility, allowing the company to run offers and offer rewards.</li>
-        <li>Robust integration with Mind Candy's games for entitlements, and data/reporting systems to allow the business to make smart decisions.</li>
-	</ul>
-	</li>
-						</ul>
-                    Keywords: <span class="keywords">Functional Programming, Scala, Scalaz, Java, Postgresql, Big Data, RedShift, AWS, SQS, Jenkins</span>
-					</div>
-					<div class="jobOld">
+		</div>
+		<div id="column2">
+			<div class="columnContents">
+				<div class="job">
+					<table class="logoAndDate">
+						<tr>
+							<td><img src="mindcandy.png" width="30" height="30" /></td>
+							<td>
+								<h3>Dec 2012 - Jun 2014</h3>
+							</td>
+						</tr>
+					</table>
+					<span class="role">Software Engineer then Data Engineer -</span>
+					<span class="company">Mind Candy</span><span class="location">, London</span>
+					<ul>
+						<li>Worked on Scala services to capture data, enabling
+							insight and integration across all Mind Candy games, including:
+							<ul>
+								<li>an eventing system to capture and interpret millions of
+									events every day</li>
+								<li>an A/B Testing system, which helped
+									optimise the features of Mind Candy games</li>
+								<li>an identity system, allowing users to have a common experience
+									across multiple products, platforms and authentication methods</li>
+								<li>a notification system which allowed the business to
+									send notifications in bulk to users with specific characteristics</li>
+							</ul>
+						</li>
+						<li>
+							Worked on Payment and Subscription systems with:
+							<ul>
+								<li>Several reliable integrations with payment gateways, subscription and voucher
+									providers.</li>
+								<li>Large emphasis on flexibility, allowing the company to experiment with offers and
+									rewards.</li>
+								<li>Robust integration with Mind Candy's games for entitlements, and data/reporting
+									systems to allow the business to make smart decisions.</li>
+							</ul>
+						</li>
+					</ul>
+					Keywords: <span class="keywords">Functional Programming, Scala, Scalaz, Java, Postgresql, Big Data,
+						RedShift, AWS, SQS, Jenkins</span>
+				</div>
+				<div class="job">
 					<table class="logoAndDate">
 						<tr>
 							<td><img src="morganstanley.png" height="30" width="142" /></td>
-							<td><h3>Jul 2010 - Dec 2012</h3></td>
+							<td>
+								<h3>Jul 2010 - Dec 2012</h3>
+							</td>
 						</tr>
 					</table>
-					<span class="role">Software Engineer -</span>
+					<span class="role">Associate Software Engineer -</span>
 
 					<span class="company">Morgan Stanley</span><span class="location">, London</span>
 					<ul>
-						<li>Backend (Java/C++) and front-end (C#/WPF, HTML5/Ext JS4) development of a bidding/analytics system.</li>
-						<li>Joined through the intensive Morgan Stanley Technology Analyst Programme. Received comprehensive 15
-week training on Unix, C++, Java, C#, relational database systems, web development, Perl and Python along with presentation skills, project management and other professional development training.</li>
-						<li>Development on scripts/models written in a variety of languages (C++, Perl, Java, C#), to ensure trading desks had all the tools needed to operate successfully.</li>
+						<li>Backend (Java/C++) and front-end (C#/WPF, HTML5/Ext JS4) development of a bidding/analytics
+							system.</li>
+						<li>Joined through the intensive Morgan Stanley Technology Analyst Programme. Received
+							comprehensive 15
+							week training on Unix, C++, Java, C#, relational database systems, web development, Perl and
+							Python along with presentation skills, project management and other professional development
+							training.</li>
+						<li>Development on scripts/models written in a variety of languages (C++, Perl, Java, C#), to
+							ensure trading desks had all the tools needed to operate successfully.</li>
 					</ul>
-                    Keywords: <span class="keywords">Java, C++, C#, WPF, Javascript, Python</span>
+					Keywords: <span class="keywords">Java, C++, C#, WPF, Javascript, Python</span>
 				</div>
-				<div class="jobOld">
+				<div class="job">
 					<table class="logoAndDate">
 						<tr>
 							<td><img src="morganstanley.png" height="30" width="142" /></td>
-							<td><h3>Jun 2008 - Aug 2008</h3></td>
+							<td>
+								<h3>Jun 2008 - Aug 2008</h3>
+							</td>
 						</tr>
 					</table>
 					<span class="role">Intern Software Engineer -</span>
 					<span class="company">Morgan Stanley</span><span class="location">, London</span>
 					<ul>
 						<li>An internship within the Securitised Products Group at Morgan Stanley, rewriting
-a legacy client-facing investor report web portal in
-ASP.NET/C#.</li>
-<li>Built a batch job in Java to load a feed of house price index and credit data into a Sybase database.</li>
-</ul>
-Keywords: <span class="keywords">C#, .NET Framework, Java, Sybase</span>
+							a legacy client-facing investor report web portal in
+							ASP.NET/C#.</li>
+						<li>Built a batch job in Java to load a feed of house price index and credit data into a Sybase
+							database.</li>
+					</ul>
+					Keywords: <span class="keywords">C#, .NET Framework, Java, Sybase</span>
 				</div>
-					<h2>Education</h2>
-					<table class="education">
-						<tr>
-							<td class="year">2010</td>
-							<td><span class="course">BSc Computer Science</span>
-									<span class="result">First Class with Honours</span>
-									<span class="institution">University of Durham</span></td>
-						</tr>
-						<tr>
-							<td class="year">2007</td>
-							<td>
-								<span class="course">A Level</span>
-								<span class="result">History: A, Biology: B, ICT: B</span>
-								<span class="institution">Fallibroome High School</span>
-							</td>
-						</tr>
-						<tr>
-							<td class="year">2005</td>
-							<td>
-								<span class="course">GCSE</span>
-								<span class="result">7 A's (incl. English,Maths,Double Science) 3 B's.</span>
-								<span class="institution">Fallibroome High School</span></td>
-						</tr>
-					</table>
+				<h2>Education</h2>
+				<table class="education">
+					<tr>
+						<td class="year">2010</td>
+						<td><span class="course">BSc Computer Science</span>
+							<span class="result">First Class with Honours</span>
+							<span class="institution">University of Durham</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="year">2007</td>
+						<td>
+							<span class="course">A Level</span>
+							<span class="result">History: A, Biology: B, ICT: B</span>
+							<span class="institution">Fallibroome High School</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="year">2005</td>
+						<td>
+							<span class="course">GCSE</span>
+							<span class="result">7 A's (incl. English,Maths,Double Science) 3 B's.</span>
+							<span class="institution">Fallibroome High School</span>
+						</td>
+					</tr>
+				</table>
 
-					<h2>Conference Talks</h2>
-					<table class="education">
-						<tr>
-                            <td class="year">2018</td>
-                            <td>
-                                <span class="course"><a href="https://www.youtube.com/watch?v=pTCR-VfBB0s">Droidspeak</a></span>
-                                <span class="result">A Scala DSL for constructing binary decision trees in a friendly way.</span>
-                                <span class="institution">flatMap Oslo</span>
-                            </td>
-						</tr>
-						<tr>
-							<td class="year">2016</td>
-							<td>
-								<span class="course"><a href="https://skillsmatter.com/skillscasts/8980-flatmappy-bird-functional-flappy-bird">flatMappy bird: functional flappy bird</a></span>
-								<span class="result">An overview of functional reactive programming, in particular Coroutines.</span>
-								<span class="institution">Scala eXchange</span>
-							</td>
-						</tr>
-					</table>
-				</div>
+				<h2>Conference Talks</h2>
+				<table class="education">
+					<tr>
+						<td class="year">2018</td>
+						<td>
+							<span class="course"><a
+									href="https://www.youtube.com/watch?v=pTCR-VfBB0s">Droidspeak</a></span>
+							<span class="result">A Scala DSL for constructing binary decision trees in a friendly
+								way.</span>
+							<span class="institution">flatMap Oslo</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="year">2016</td>
+						<td>
+							<span class="course"><a
+									href="https://skillsmatter.com/skillscasts/8980-flatmappy-bird-functional-flappy-bird">flatMappy
+									bird: functional flappy bird</a></span>
+							<span class="result">An overview of functional reactive programming, in particular
+								Coroutines.</span>
+							<span class="institution">Scala eXchange</span>
+						</td>
+					</tr>
+				</table>
 			</div>
-		<div id="valuesDiv">Values: Functional Programming, Testing, Pair Programming, Data Driven Decisions, Puns, Running, Hiking, Learning Spanish, Reading, Learning Haskell</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
